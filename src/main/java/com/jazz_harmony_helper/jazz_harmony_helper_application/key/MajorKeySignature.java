@@ -91,7 +91,7 @@ public enum MajorKeySignature {
     ),
 
     /*
-     * Discouraged sharp keys
+     * Modulation only sharp keys
      */
     G_SHARP(
             CMajorNote.G,
@@ -130,7 +130,7 @@ public enum MajorKeySignature {
     ),
 
     /*
-     * Discouraged flat keys
+     * Modulation only flat keys
      */
     F_FLAT(
             CMajorNote.F,

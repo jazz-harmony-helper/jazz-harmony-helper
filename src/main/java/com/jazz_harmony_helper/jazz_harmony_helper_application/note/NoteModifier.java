@@ -9,7 +9,10 @@ public enum NoteModifier {
     TRIPLE_SHARP("#x", 3),
     TRIPLE_FLAT("bbb", -3),
     QUADRUPLE_SHARP("xx", 4),
-    QUADRUPLE_FLAT("bbbb", -4);
+    QUADRUPLE_FLAT("bbbb", -4),
+    QUINTUPLE_SHARP("#xx", 5),
+    QUINTUPLE_FLAT("bbbbb", -5),
+    SEXTUPLE_SHARP("xxx", 6);
 
     private final String representation;
     private final int offset;

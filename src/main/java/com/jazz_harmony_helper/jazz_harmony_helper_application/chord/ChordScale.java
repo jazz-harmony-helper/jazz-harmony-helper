@@ -10,7 +10,7 @@ import java.util.Set;
 import static com.jazz_harmony_helper.jazz_harmony_helper_application.scale.Interval.*;
 
 public enum ChordScale {
-    MAJOR(
+    IONIAN(
             TONIC,
             MAJOR_SECOND,
             MAJOR_THIRD,
@@ -129,15 +129,6 @@ public enum ChordScale {
             MAJOR_SIXTH,
             MINOR_SEVENTH
     ),
-    LYDIAN_FLAT_SEVEN(
-            TONIC,
-            MAJOR_SECOND,
-            MAJOR_THIRD,
-            AUGMENTED_FOURTH,
-            PERFECT_FIFTH,
-            MAJOR_SIXTH,
-            MINOR_SEVENTH
-    ),
     LYDIAN_FLAT_SEVEN_FLAT_9(
             TONIC,
             MINOR_SECOND,
@@ -182,7 +173,7 @@ public enum ChordScale {
         this.intervals = new LinkedHashSet<>(Arrays.asList(intervals));
     }
 
-    public Set<Interval> getIntervals() {
+    public SequencedSet<Interval> getIntervals() {
         return this.intervals;
     }
 }

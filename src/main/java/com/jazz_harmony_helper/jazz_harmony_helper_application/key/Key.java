@@ -1,5 +1,6 @@
 package com.jazz_harmony_helper.jazz_harmony_helper_application.key;
 
+import com.jazz_harmony_helper.jazz_harmony_helper_application.harmonic_library.HarmonicLibrary;
 import com.jazz_harmony_helper.jazz_harmony_helper_application.scale.Interval;
 import com.jazz_harmony_helper.jazz_harmony_helper_application.note.CanonicalNote;
 
@@ -10,8 +11,9 @@ public class Key {
     private final KeyRelativeModality modality;
     private final CanonicalNote keyRoot;
     private final Map<Interval, CanonicalNote> noteAbstractMap;
+    private HarmonicLibrary harmonicLibrary;
 
-    protected Key(
+    public Key(
             MajorKeySignature majorKeySignature,
             KeyRelativeModality modality,
             CanonicalNote keyRoot,
@@ -37,5 +39,16 @@ public class Key {
 
     public Map<Interval, CanonicalNote> getNoteAbstractMap() {
         return noteAbstractMap;
+    }
+
+    public HarmonicLibrary getHarmonicLibrary() {
+        return harmonicLibrary;
+    }
+
+    public void setHarmonicLibrary(HarmonicLibrary harmonicLibrary) {
+        if (this.harmonicLibrary != null) {
+            throw new IllegalStateException("Harmonic library already set");
+        }
+        this.harmonicLibrary = harmonicLibrary;
     }
 }

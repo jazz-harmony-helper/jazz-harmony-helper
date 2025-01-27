@@ -1,7 +1,6 @@
 package com.jazz_harmony_helper.jazz_harmony_helper_application.harmonic_analysis_driven_chord_set;
 
 import com.jazz_harmony_helper.jazz_harmony_helper_application.chord.ChordAbstract;
-import com.jazz_harmony_helper.jazz_harmony_helper_application.chord.ChordQuality;
 import com.jazz_harmony_helper.jazz_harmony_helper_application.key.KeyRelativeModality;
 import com.jazz_harmony_helper.jazz_harmony_helper_application.scale.Interval;
 
@@ -17,11 +16,10 @@ import static com.jazz_harmony_helper.jazz_harmony_helper_application.scale.Inte
 
 public enum HarmonicAnalysisDrivenChordSetAbstract {
     /*
-        Will generate these HarmonicAnalysisDrivenChordSets for Major keys only
+        Will generate these HarmonicAnalysisDrivenChordSets for the Major modality only
      */
     MAJOR_TONIC_MAJOR_SEVENTH(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             TONIC,
             HarmonicClassification.DIATONIC,
             HarmonicFunction.TONIC,
@@ -31,7 +29,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_TONIC_MAJOR_SIXTH(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             TONIC,
             HarmonicClassification.DIATONIC,
             HarmonicFunction.TONIC,
@@ -41,7 +38,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_TWO_MINOR_SEVEN(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.DIATONIC,
             HarmonicFunction.SUBDOMINANT,
@@ -51,7 +47,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_THREE_MINOR_SEVEN(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.DIATONIC,
             HarmonicFunction.TONIC,
@@ -61,7 +56,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_FOUR_MAJOR_SEVEN(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.DIATONIC,
             HarmonicFunction.SUBDOMINANT,
@@ -71,7 +65,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_FOUR_MAJOR_SIXTH(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.DIATONIC,
             HarmonicFunction.SUBDOMINANT,
@@ -81,7 +74,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_FIVE_DOMINANT_SEVENTH(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.DIATONIC,
             HarmonicFunction.DOMINANT,
@@ -95,7 +87,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_FIVE_MAJOR_SIXTH(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.DIATONIC,
             HarmonicFunction.DOMINANT,
@@ -105,7 +96,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_SIX_MINOR_SEVENTH(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.DIATONIC,
             HarmonicFunction.TONIC,
@@ -115,7 +105,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_FIVE_OF_FOUR(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             TONIC,
             HarmonicClassification.SECONDARY_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -125,7 +114,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_FIVE_OF_FIVE(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.SECONDARY_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -135,7 +123,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_FIVE_OF_SIX(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.SECONDARY_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -145,7 +132,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_FIVE_OF_THREE(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.SECONDARY_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -156,7 +142,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_FIVE_OF_TWO(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.SECONDARY_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -166,7 +151,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_TWO_OF_FOUR(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.SECONDARY_PREDOMINANT,
             HarmonicFunction.SECONDARY_PREDOMINANT,
@@ -177,7 +161,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_TWO_OF_SIX(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.SECONDARY_PREDOMINANT,
             HarmonicFunction.SECONDARY_PREDOMINANT,
@@ -189,7 +172,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_TWO_OF_TWO(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.SECONDARY_PREDOMINANT,
             HarmonicFunction.SECONDARY_PREDOMINANT,
@@ -201,7 +183,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_TWO_OF_THREE(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             AUGMENTED_FOURTH,
             HarmonicClassification.SECONDARY_PREDOMINANT,
             HarmonicFunction.SECONDARY_PREDOMINANT,
@@ -212,7 +193,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_TWO_OF_FIVE(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.SECONDARY_PREDOMINANT,
             HarmonicFunction.SECONDARY_PREDOMINANT,
@@ -222,7 +202,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_SUB_FIVE(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MINOR_SECOND,
             HarmonicClassification.SUBSTITUTE_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -232,7 +211,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_SUB_FIVE_OF_TWO(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MINOR_THIRD,
             HarmonicClassification.SUBSTITUTE_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -242,7 +220,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_SUB_FIVE_OF_THREE(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.SUBSTITUTE_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -252,7 +229,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_SUB_FIVE_OF_FOUR(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             DIMINISHED_FIFTH,
             HarmonicClassification.SUBSTITUTE_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -262,7 +238,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_SUB_FIVE_OF_FIVE(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MINOR_SIXTH,
             HarmonicClassification.SUBSTITUTE_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -272,7 +247,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     MAJOR_SUB_FIVE_OF_SIX(
             Collections.singletonList(KeyRelativeModality.MAJOR),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MINOR_SEVENTH,
             HarmonicClassification.SUBSTITUTE_DOMINANT,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -282,18 +256,17 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
 
     /*
-     *  Will generate these HarmonicAnalysisDrivenChordSets for Minor keys only
+     *  Will generate these HarmonicAnalysisDrivenChordSets for the Minor Modality only
      */
 
 
     
     /*
-     *  Will generate these HarmonicAnalysisDrivenChordSets for both Major and Minor keys
+     *  Will generate these HarmonicAnalysisDrivenChordSets for all modalities
      */
     
     ALL_SECONDARY_CHAIN_ONE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             TONIC,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -307,7 +280,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_FLAT_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MINOR_SECOND,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -321,7 +293,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -335,7 +306,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_FLAT_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MINOR_THIRD,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -349,7 +319,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -363,7 +332,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -377,7 +345,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_SHARP_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             AUGMENTED_FOURTH,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -391,7 +358,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_FLAT_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             DIMINISHED_FIFTH,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -405,7 +371,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -413,12 +378,12 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
                     ChordAbstract.GENERAL_MIXOLYDIAN_DOMINANT_SEVENTH,
                     ChordAbstract.DOMINANT_SEVENTH_MINOR_TARGET,
                     ChordAbstract.DOMINANT_SEVENTH_SYMMETRIC_DOMINANT,
-                    ChordAbstract.DOMINANT_SEVENTH_SYMMETRIC_DOMINANT
+                    ChordAbstract.DOMINANT_SEVENTH_SYMMETRIC_DOMINANT,
+                    ChordAbstract.GENERAL_MIXOLYDIAN_DOMINANT_SEVENTH_SUS_FOUR
             )
     ),
     ALL_SECONDARY_CHAIN_FLAT_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MINOR_SIXTH,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -432,7 +397,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -446,7 +410,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_FLAT_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MINOR_SEVENTH,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -460,7 +423,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_SECONDARY_CHAIN_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DOMINANT_SEVENTH_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.SECONDARY_DOMINANT_CHAIN,
             HarmonicFunction.SECONDARY_DOMINANT,
@@ -474,7 +436,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_ONE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             TONIC,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -484,7 +445,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_FLAT_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             MINOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -494,7 +454,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -504,7 +463,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_FLAT_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             MINOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -514,7 +472,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -524,7 +481,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -534,7 +490,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_SHARP_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             AUGMENTED_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -544,7 +499,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_FLAT_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             DIMINISHED_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -554,7 +508,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -564,7 +517,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_FLAT_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             MINOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -574,7 +526,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -584,7 +535,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_FLAT_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             MINOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -594,7 +544,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SEVENTH_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SEVENTH_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -604,7 +553,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_ONE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             TONIC,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -614,7 +562,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_FLAT_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             MINOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -624,7 +571,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -634,7 +580,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_FLAT_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             MINOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -644,7 +589,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -654,7 +598,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -664,7 +607,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_SHARP_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             AUGMENTED_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -674,7 +616,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_FLAT_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             DIMINISHED_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -684,7 +625,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -694,7 +634,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_FLAT_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             MINOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -704,7 +643,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -714,7 +652,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_FLAT_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             MINOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -724,7 +661,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MAJOR_SIXTH_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MAJOR_SIXTH_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -734,7 +670,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_ONE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             TONIC,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -744,7 +679,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_FLAT_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             MINOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -754,7 +688,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -764,7 +697,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_FLAT_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             MINOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -774,7 +706,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -784,7 +715,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -794,7 +724,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SHARP_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             AUGMENTED_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -804,7 +733,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_FLAT_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             DIMINISHED_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -814,7 +742,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -824,7 +751,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_FLAT_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             MINOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -834,7 +760,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -844,7 +769,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_FLAT_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             MINOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -854,7 +778,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -864,7 +787,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_ONE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             TONIC,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -874,7 +796,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_FLAT_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MINOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -884,7 +805,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -894,7 +814,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_FLAT_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MINOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -904,7 +823,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -914,7 +832,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -924,7 +841,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_SHARP_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             AUGMENTED_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -934,7 +850,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_FLAT_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             DIMINISHED_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -944,7 +859,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -954,7 +868,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_FLAT_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MINOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -964,7 +877,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -974,7 +886,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_FLAT_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MINOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -984,7 +895,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVENTH_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVENTH_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -994,7 +904,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_ONE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             TONIC,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1004,7 +913,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_FLAT_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             MINOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1014,7 +922,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1024,7 +931,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_FLAT_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             MINOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1034,7 +940,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1044,7 +949,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1054,7 +958,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_SHARP_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             AUGMENTED_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1064,7 +967,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_FLAT_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             DIMINISHED_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1074,7 +976,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1084,7 +985,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_FLAT_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             MINOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1094,7 +994,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1104,7 +1003,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_FLAT_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             MINOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1114,7 +1012,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SIXTH_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SIXTH_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1124,7 +1021,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_ONE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             TONIC,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1134,7 +1030,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_FLAT_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             MINOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1144,7 +1039,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1154,7 +1048,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_FLAT_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             MINOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1164,7 +1057,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1174,7 +1066,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1184,7 +1075,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_SHARP_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             AUGMENTED_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1194,7 +1084,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_FLAT_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             DIMINISHED_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1204,7 +1093,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1214,7 +1102,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_FLAT_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             MINOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1224,7 +1111,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1234,7 +1120,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_FLAT_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             MINOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1244,7 +1129,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_MINOR_SEVEN_FLAT_FIVE_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.MINOR_SEVEN_FLAT_FIVE_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1259,7 +1143,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
 
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_ONE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             TONIC,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1269,7 +1152,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_FLAT_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             MINOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1279,7 +1161,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1289,7 +1170,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_FLAT_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             MINOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1299,7 +1179,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1309,7 +1188,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1319,7 +1197,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_SHARP_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             AUGMENTED_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1329,7 +1206,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_FLAT_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             DIMINISHED_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1339,7 +1215,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1349,7 +1224,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_FLAT_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             MINOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1359,7 +1233,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1369,7 +1242,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_FLAT_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             MINOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1379,7 +1251,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_CONSTANT_STRUCTURE_AUGMENTED_MAJOR_SEVENTH_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.AUGMENTED_MAJOR_SEVENTH_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1392,7 +1263,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
 
     ALL_DIMINISHED_APPROACH_ONE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             TONIC,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1402,7 +1272,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_FLAT_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             MINOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1412,7 +1281,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_TWO(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             MAJOR_SECOND,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1422,7 +1290,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_FLAT_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             MINOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1432,7 +1299,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_THREE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             MAJOR_THIRD,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1442,7 +1308,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             PERFECT_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1452,7 +1317,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_SHARP_FOUR(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             AUGMENTED_FOURTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1462,7 +1326,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_FLAT_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             DIMINISHED_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1472,7 +1335,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_FIVE(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             PERFECT_FIFTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1482,7 +1344,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_FLAT_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             MINOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1492,7 +1353,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_SIX(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             MAJOR_SIXTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1502,7 +1362,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_FLAT_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             MINOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1512,7 +1371,6 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ),
     ALL_DIMINISHED_APPROACH_SEVEN(
             Arrays.asList(KeyRelativeModality.values()),
-            ChordQuality.DIMINISHED_SEVENTH_CHORD,
             MAJOR_SEVENTH,
             HarmonicClassification.CONSTANT_STRUCTURE,
             HarmonicFunction.CONSTANT_STRUCTURE,
@@ -1523,34 +1381,27 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
     ;
 
     private final Set<KeyRelativeModality> modalityAvailability;
-    private final ChordQuality analyzedQuality;
     private final Interval distanceFromKeyRoot;
     private final HarmonicClassification harmonicClassification;
     private final HarmonicFunction harmonicFunction;
-    private final SequencedSet<ChordAbstract> availableChords;
+    private final SequencedSet<ChordAbstract> chordAbstracts;
 
     HarmonicAnalysisDrivenChordSetAbstract(
             List<KeyRelativeModality> modalityAvailability,
-            ChordQuality analyzedQuality,
             Interval distanceFromKeyRoot,
             HarmonicClassification harmonicClassification,
             HarmonicFunction harmonicFunction,
-            List<ChordAbstract> availableChords
+            List<ChordAbstract> chordAbstracts
     ) {
         this.modalityAvailability = new HashSet<>(modalityAvailability);
-        this.analyzedQuality = analyzedQuality;
         this.distanceFromKeyRoot = distanceFromKeyRoot;
         this.harmonicClassification = harmonicClassification;
         this.harmonicFunction = harmonicFunction;
-        this.availableChords = new LinkedHashSet<>(availableChords);
+        this.chordAbstracts = new LinkedHashSet<>(chordAbstracts);
     }
 
     public Set<KeyRelativeModality> getModalityAvailability() {
         return modalityAvailability;
-    }
-
-    public ChordQuality getAnalyzedQuality() {
-        return analyzedQuality;
     }
 
     public Interval getDistanceFromKeyRoot() {
@@ -1565,7 +1416,7 @@ public enum HarmonicAnalysisDrivenChordSetAbstract {
         return harmonicFunction;
     }
 
-    public SequencedSet<ChordAbstract> getAvailableChords() {
-        return availableChords;
+    public SequencedSet<ChordAbstract> getChordAbstracts() {
+        return chordAbstracts;
     }
 }

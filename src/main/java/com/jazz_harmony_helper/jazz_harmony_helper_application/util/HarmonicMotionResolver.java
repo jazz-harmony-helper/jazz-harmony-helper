@@ -1,4 +1,4 @@
-package com.jazz_harmony_helper.jazz_harmony_helper_application.harmonic_analysis;
+package com.jazz_harmony_helper.jazz_harmony_helper_application.util;
 
 import com.jazz_harmony_helper.jazz_harmony_helper_application.harmonic_analysis_driven_chord_set.HarmonicAnalysisDrivenChordSet;
 import com.jazz_harmony_helper.jazz_harmony_helper_application.harmonic_analysis_driven_chord_set.HarmonicFunction;
@@ -10,8 +10,8 @@ import static com.jazz_harmony_helper.jazz_harmony_helper_application.harmonic_a
 @Component
 public class HarmonicMotionResolver {
     public HarmonicMotionType resolveHarmonicMotion(HarmonicAnalysisDrivenChordSet previousChord, HarmonicAnalysisDrivenChordSet nextChord) {
-        HarmonicFunction previousChordFunction = previousChord.getHarmonicFunction();
-        HarmonicFunction nextChordFunction = nextChord.getHarmonicFunction();
+        HarmonicFunction previousChordFunction = previousChord.getHarmonicAnalysisDrivenChordSetAbstract().getHarmonicFunction();
+        HarmonicFunction nextChordFunction = nextChord.getHarmonicAnalysisDrivenChordSetAbstract().getHarmonicFunction();
 
         switch (previousChordFunction) {
             case TONIC:

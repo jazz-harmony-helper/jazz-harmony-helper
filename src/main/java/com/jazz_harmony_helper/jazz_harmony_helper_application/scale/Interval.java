@@ -28,18 +28,18 @@ public enum Interval {
     AUGMENTED_SEVENTH(ScaleDegree.SEVENTH, 0);
 
     private final ScaleDegree scaleDegree;
-    private final int canonicalScaleDegree;
+    private final int semitoneSteps;
 
-    Interval(ScaleDegree scaleDegree, int canonicalScaleDegree) {
+    Interval(ScaleDegree scaleDegree, int semitoneSteps) {
         this.scaleDegree = scaleDegree;
-        this.canonicalScaleDegree = canonicalScaleDegree;
+        this.semitoneSteps = semitoneSteps;
     }
 
     public ScaleDegree getScaleDegree() {
         return scaleDegree;
     }
 
-    public int getCanonicalScaleDegree() {
-        return canonicalScaleDegree;
+    public int getSemitoneSteps() {
+        return semitoneSteps;
     }
 }

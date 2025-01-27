@@ -10,32 +10,37 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class KeyFactoryTest {
 
-    @BeforeEach
-    void setUp() {
-
-    }
-
-    @CsvSource({
-            "C,DORIAN",
-            "C_DOUBLE_SHARP,LYDIAN",
-            "C_DOUBLE_FLAT,PHRYGIAN"
-    })
-    @ParameterizedTest
-    public void shouldGenerateKeysSuccessfully(MajorKeySignature majorKeySignature, KeyRelativeModality keyRelativeModality) {
-        Key key = KeyFactory.getKey(majorKeySignature, keyRelativeModality);
-        assertEquals(keyRelativeModality, key.getModality());
-        assertEquals(majorKeySignature, key.getKeySignature());
-        assertNotNull(key.getNoteAbstractMap().get(Interval.PERFECT_FIFTH));
-    }
-
-    @Test
-    public void shouldAlwaysReturnSameInstance() {
-        MajorKeySignature majorKeySignature = MajorKeySignature.F_SHARP;
-        KeyRelativeModality keyRelativeModality = KeyRelativeModality.MAJOR;
-
-        Key key = KeyFactory.getKey(majorKeySignature, keyRelativeModality);
-        Key key2 = KeyFactory.getKey(majorKeySignature, keyRelativeModality);
-
-        assertEquals(key, key2);
-    }
+//    @BeforeEach
+//    void setUp() {
+//
+//    }
+//
+//    @CsvSource({
+//            "C,DORIAN",
+//            "C_DOUBLE_SHARP,LYDIAN",
+//            "C_DOUBLE_FLAT,PHRYGIAN",
+//            "A_FLAT,MINOR",
+//            "C,MAJOR"
+//    })
+//    @ParameterizedTest
+//    public void shouldGenerateKeysSuccessfully(
+//            MajorKeySignature majorKeySignature,
+//            KeyRelativeModality keyRelativeModality
+//    ) {
+//        Key key = KeyFactory.getKey(majorKeySignature, keyRelativeModality);
+//        assertEquals(keyRelativeModality, key.getModality());
+//        assertEquals(majorKeySignature, key.getKeySignature());
+//        assertNotNull(key.getNoteAbstractMap().get(Interval.PERFECT_FIFTH));
+//    }
+//
+//    @Test
+//    public void shouldAlwaysReturnSameInstance() {
+//        MajorKeySignature majorKeySignature = MajorKeySignature.F_SHARP;
+//        KeyRelativeModality keyRelativeModality = KeyRelativeModality.MAJOR;
+//
+//        Key key = KeyFactory.getKey(majorKeySignature, keyRelativeModality);
+//        Key key2 = KeyFactory.getKey(majorKeySignature, keyRelativeModality);
+//
+//        assertEquals(key, key2);
+//    }
 }

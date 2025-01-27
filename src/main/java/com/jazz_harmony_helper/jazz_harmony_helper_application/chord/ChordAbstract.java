@@ -9,7 +9,7 @@ import java.util.SequencedSet;
 
 public enum ChordAbstract {
     GENERAL_MAJOR_SEVENTH(
-            ChordScale.MAJOR,
+            ChordScale.IONIAN,
             ChordQuality.MAJOR_SEVENTH_CHORD,
             Arrays.asList(
                     Interval.MAJOR_SECOND,
@@ -17,7 +17,7 @@ public enum ChordAbstract {
             )
     ),
     GENERAL_MAJOR_SIXTH(
-            ChordScale.MAJOR,
+            ChordScale.IONIAN,
             ChordQuality.MAJOR_SIXTH_CHORD,
             Arrays.asList(
                     Interval.MAJOR_SECOND,
